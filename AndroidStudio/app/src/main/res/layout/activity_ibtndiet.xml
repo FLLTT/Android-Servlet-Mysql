@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/navigationLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btncommon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="常规菜品" />
+
+        <Button
+            android:id="@+id/btndessert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="甜点小吃" />
+
+        <Button
+            android:id="@+id/btndrinks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="饮料酒水" />
+        <Button
+            android:id="@+id/btndatabase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="数据测试" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/navigationLayout">
+
+    <LinearLayout
+        android:id="@+id/dishLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECECEC"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/dishImage"
+                android:layout_width="112dp"
+                android:layout_height="99dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/d01" />
+
+            <TextView
+                android:id="@+id/dishName"
+                android:layout_width="150dp"
+                android:layout_height="79dp"
+                android:layout_gravity="right|center_vertical"
+                android:text="爆香红烧肉  ￥48"
+                android:textColor="#5BA3DC"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/addButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_add" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECECEC"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/dishImage1"
+                android:layout_width="112dp"
+                android:layout_height="99dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/d03" />
+
+            <TextView
+                android:id="@+id/dishName1"
+                android:layout_width="150dp"
+                android:layout_height="79dp"
+                android:layout_gravity="right|center_vertical"
+                android:text="凉拌嫩豆腐  ￥28"
+                android:textColor="#5BA3DC"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/addButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_add" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECECEC"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/dishImage2"
+                android:layout_width="112dp"
+                android:layout_height="99dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/d04" />
+
+            <TextView
+                android:id="@+id/dishName2"
+                android:layout_width="150dp"
+                android:layout_height="79dp"
+                android:layout_gravity="right|center_vertical"
+                android:text="香煎牛小排  ￥78"
+                android:textColor="#5BA3DC"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/addButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_add" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECECEC"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/dishImage3"
+                android:layout_width="112dp"
+                android:layout_height="99dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/d07" />
+
+            <TextView
+                android:id="@+id/dishName3"
+                android:layout_width="150dp"
+                android:layout_height="79dp"
+                android:layout_gravity="right|center_vertical"
+                android:text="咖喱牛肉碗  ￥58"
+                android:textColor="#5BA3DC"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/addButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_add" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECECEC"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/dishImage4"
+                android:layout_width="112dp"
+                android:layout_height="99dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/d08" />
+
+            <TextView
+                android:id="@+id/dishName4"
+                android:layout_width="150dp"
+                android:layout_height="79dp"
+                android:layout_gravity="right|center_vertical"
+                android:text="生腌醉蟹(单)  ￥38"
+                android:textColor="#5BA3DC"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/addButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_add" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECECEC"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/dishImage5"
+                android:layout_width="112dp"
+                android:layout_height="99dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/d09" />
+
+            <TextView
+                android:id="@+id/dishName5"
+                android:layout_width="150dp"
+                android:layout_height="79dp"
+                android:layout_gravity="right|center_vertical"
+                android:text="炙烤鳗鱼     ￥48"
+                android:textColor="#5BA3DC"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/addButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_add" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECECEC"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/dishImage6"
+                android:layout_width="112dp"
+                android:layout_height="99dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/d10" />
+
+            <TextView
+                android:id="@+id/dishName6"
+                android:layout_width="150dp"
+                android:layout_height="79dp"
+                android:layout_gravity="right|center_vertical"
+                android:text="香辣鸡中翅  ￥48"
+                android:textColor="#5BA3DC"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/addButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_add" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#ECECEC"
+            android:padding="10dp">
+
+        </FrameLayout>
+    </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+    <ImageButton
+            android:id="@+id/imageButtonhome"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/homeimage" />
+
+        <ImageButton
+            android:id="@+id/imageButtondiet"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/nqf" />
+
+        <ImageButton
+            android:id="@+id/imageButtonbasket"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/markimg" />
+
+        <ImageButton
+            android:id="@+id/imageButtoninfo"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/iimg" />
+
+    </LinearLayout>
+</RelativeLayout>

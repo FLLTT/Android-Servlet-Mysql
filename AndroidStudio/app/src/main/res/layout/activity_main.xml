@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/login_front"
+        android:alpha="0.5"/>
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="请输入用户名"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="请输入您的密码"
+            android:inputType="textPassword"
+            android:textColorHint="#ffffff" />
+
+        <TextView
+            android:id="@+id/textViewChangePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_gravity="right"
+            android:onClick="changePassword"
+            android:text="修改密码" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSubmit"
+                android:layout_toLeftOf="@+id/center"
+                android:textSize="20dp"
+                android:text="登录"/>
+
+            <View
+                android:id="@+id/center"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@color/white"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRegister"
+                android:layout_toRightOf="@+id/center"
+                android:textSize="20dp"
+                android:text="注册"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

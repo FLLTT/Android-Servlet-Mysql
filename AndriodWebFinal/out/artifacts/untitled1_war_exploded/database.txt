@@ -1,0 +1,4 @@
+﻿DRIVER-com.mysql.cj.jdbc.Driver
+URL-jdbc:mysql://localhost:3306/dietapp?useUnicode=true&characterEncoding=utf8
+ACCOUNT-XXXX
+PASSWORD-XXXXXXXXXXX
