@@ -13,3 +13,4 @@
   
   3.连接Mysql时，先修改 AndriodWebFinal\out\artifacts\untitled1_war_exploded\database.txt 文件将数据库的账号和密码改为自己的账号和密码
   
+详细文档描述请参考CSDN:http://t.csdnimg.cn/RtGvo
